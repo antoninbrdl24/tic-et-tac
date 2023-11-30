@@ -5,12 +5,12 @@
 	<section class="container bg-light bg-opacity-50 rounded p-3">
 		<div class="squirrels mb-5">
 			<h2>Liste des écureuils ayant accès au stock :</h2>
-			{% if squirrels is not defined or squirrels is empty %}
+			{% if squirells is not defined or squirells is empty %}
 				<span class="alert-danger rounded p-2">Aucun écureuil !</span>
 			{% else %}
 				<ul>
-					{% for squirrel in squirrels %}
-						<li>{{ squirrel.name }}</li>
+					{% for squirell in squirells %}
+						<li>{{ squirell.name }}</li>
 					{% endfor %}
 				</ul>
 			{% endif %}
